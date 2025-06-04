@@ -20,7 +20,7 @@ body {
 }
 
 /* Use Playfair Display SC for titles */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, button {
   font-family: 'Playfair Display SC', serif;
 }
 
@@ -52,7 +52,7 @@ h1, h2, h3, h4 {
 }
 
 button {
-  font-family: 'Cabin Condensed', sans-serif;
+  /* font-family: 'Cabin Condensed', sans-serif; */
   font-size: 1rem;
   padding: 0.5rem 1rem;
   border: none;
@@ -130,8 +130,6 @@ button:hover {
   color: var(--color-white);
 }
 
-
-
 /* SCROLL VIEW */
 #scrolling-view {
   overflow: hidden;
@@ -196,6 +194,50 @@ button:hover {
 }
 
 .button-menu-container button:hover {
+  background-color: var(--color-mauve-brown);
+  color: var(--color-white);
+}
+
+/* GALLERY */
+#gallery {
+  padding: 5rem 2rem;
+  background-color: var(--color-white);
+  text-align: center;
+}
+
+.gallery-preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.gallery-preview img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 1px solid var(--color-sage-gray);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-preview img:hover {
+  transform: scale(1.02);
+}
+
+.gallery-button button {
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  border: 1px solid var(--color-black);
+  background-color: var(--color-sage-gray);
+  color: var(--color-black);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 0;
+}
+
+.gallery-button button:hover {
   background-color: var(--color-mauve-brown);
   color: var(--color-white);
 }
