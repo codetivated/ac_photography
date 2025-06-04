@@ -200,3 +200,36 @@ button:hover {
   100% { transform: translateX(-100%); }
 }
 
+
+/* BUTTON MENU */
+#button-menu {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-sage-gray);
+}
+
+.button-menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 1rem;
+}
+
+.button-menu-container button {
+  border: 1px solid var(--color-black, #000);
+  border-radius: 0;
+  width: 30rem;
+  height: 6rem; /* consistent height */
+  font-size: 3rem;
+  font-family: 'Playfair Display SC', serif;
+  background: transparent;
+  cursor: pointer;
+  margin: 0; /* no space between buttons */
+  padding: 0;
+  line-height: 1;
+}
+
+.button-menu-container button:hover {
+  background-color: var(--color-mauve-brown);
+  color: var(--color-white);
+}
