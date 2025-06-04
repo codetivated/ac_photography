@@ -1,0 +1,161 @@
+:root {
+  --color-orange: #F96E43;
+  --color-golden: #FDD589;
+  --color-forest: #7A845C;
+  --color-teal: #3D6C64;
+  --color-sage-gray: #DBDED3;
+  --color-mauve-brown: #776164;
+  --color-eggshell: #F8F6EA;
+  --color-white: #fff;
+  --color-black: #333;
+}
+
+/* Apply Cabin Condensed to the whole site */
+body {
+  font-family: 'Cabin Condensed', sans-serif;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+/* Use Playfair Display SC for titles */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display SC', serif;
+}
+
+#navbar-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--color-sage-gray);
+  background-color: var(--color-white);
+}
+
+.navbar-left img {
+  height: 50px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-right a {
+  font-family: 'Playfair Display SC', serif;
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 1.1rem;
+}
+
+button {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--color-sage-gray);
+  color: var(--color-black);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--color-mauve-brown);
+  color: var(--color-white);
+}
+
+#hero {
+  width: 100%;
+  height: 80vh;
+  max-height: 900px;
+  background-image: url(/assets/images/female-cardinal-anita-cooke-photography.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 5rem;
+  gap: 5rem;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-sage-gray);
+}
+
+.photo-of-anita-cooke img {
+  max-width: 400px;
+  width: 100%;
+  border: #333;
+}
+
+.about-anita-cooke {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-anita-cooke h1 {
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.about-anita-cooke button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-sage-gray);
+  color: var(--color-black);
+  border: none;
+  border-radius: 4px;
+  width: fit-content;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about-anita-cooke button:hover {
+  background-color: var(--color-mauve-brown);
+  color: var(--color-white);
+}
+
+.headline-wrapper {
+  position: relative;
+  display: inline-block;
+  z-index: 0; /* make sure it doesn’t block the ellipse */
+}
+
+.blur-ellipse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  background-color: var(--color-golden);
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.4;
+  z-index: -1; /* behind h1, but still visible */
+}
+
+.headline-wrapper h1 {
+  position: relative;
+  z-index: 1; /* bring text in front of blur */
+}
+
+@keyframes glow-pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
+  50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.6; }
+}
+
+.blur-ellipse {
+  animation: glow-pulse 6s ease-in-out infinite;
+}
