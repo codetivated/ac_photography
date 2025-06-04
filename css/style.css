@@ -25,7 +25,6 @@ h1, h2, h3, h4 {
 }
 
 /* NAVBAR */
-
 #navbar-section {
   display: flex;
   justify-content: space-between;
@@ -70,7 +69,6 @@ button:hover {
 }
 
 /* HERO */
-
 #hero {
   width: 100%;
   height: 80vh;
