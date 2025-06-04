@@ -24,6 +24,8 @@ h1, h2, h3, h4 {
   font-family: 'Playfair Display SC', serif;
 }
 
+/* NAVBAR */
+
 #navbar-section {
   display: flex;
   justify-content: space-between;
@@ -67,6 +69,8 @@ button:hover {
   color: var(--color-white);
 }
 
+/* HERO */
+
 #hero {
   width: 100%;
   height: 80vh;
@@ -79,6 +83,8 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
+
+/* ABOUT ME */
 
 #about-me {
   display: flex;
@@ -159,3 +165,38 @@ button:hover {
 .blur-ellipse {
   animation: glow-pulse 6s ease-in-out infinite;
 }
+
+/* SCROLL VIEW */
+#scrolling-view {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--color-black);
+  color: var(--color-eggshell);
+  padding: 1rem 0;
+}
+
+.scroll-left {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 50s linear infinite;
+}
+
+.scroll-left p {
+  display: inline-block;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.scroll-left p span {
+  margin: 0 0.5rem;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Keyframes to move left */
+@keyframes scroll-left {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
