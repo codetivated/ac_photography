@@ -4,20 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anita Cooke Photography</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&family=Playfair+Display+SC&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- NAVBAR -->
   <section id="navbar-section">
     <div class="navbar-left">
       <img src="/assets/images/anita-cooke-submark-orange.png" alt="Anita Cooke submark logo.">
     </div>
     <div class="navbar-right">
-      <a href="#gallery">GALLERY</a>
-      <a href="#contact">CONTACT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="contact.html">CONTACT</a>
       <button>BUY MY PRINTS</button>
     </div>
   </section>
+  <!-- HERO -->
   <section id="hero"></section>
 <section id="about-me">
   <div class="photo-of-anita-cooke">
@@ -31,6 +35,7 @@
     <button>VIEW MY GALLERY</button>
   </div>
 </section>
+<!-- SCROLL BAR -->
 <section id="scrolling-view">
   <div class="scroll-left">
     <p>
@@ -67,6 +72,7 @@
     </p>
   </div>
 </section>
+<!-- BUTTON MENU -->
   <section id="button-menu">
     <div class="button-menu-container">
       <button>Gallery</button>
@@ -74,18 +80,39 @@
     <button>Contact</button>
     </div>
   </section>
+<!-- GALLERY   -->
 <section id="gallery">
   <div class="gallery-preview">
-    <img src="assets/images/bird-one.jpeg" alt="Bird on a branch" />
-    <img src="assets/images/bird-two.jpeg" alt="Bird on a perch" />
-    <img src="assets/images/bird-three.jpeg" alt="Bird on a stick" />
-    <img src="assets/images/bird-four.jpeg" alt="Bird on a post" />
+    <img src="assets/images/bird-1.jpeg" alt="Bird on a branch" />
+    <img src="assets/images/bird-2.jpeg" alt="Bird on a perch" />
+    <img src="assets/images/bird-3.jpeg" alt="Bird on a stick" />
+    <img src="assets/images/bird-4.jpeg" alt="Bird on a post" />
   </div>
-
   <div class="gallery-button">
     <button onclick="window.location.href='gallery.html'">SEE FULL GALLERY</button>
   </div>
 </section>
-  <section id="footer"></section>
+<!-- FOOTER -->
+<section id="footer">
+  <div class="footer-logo-and-social-icons">
+    <img src="/assets/images/anita-cooke-photography-logo.png" alt="Logo of Anita Cooke Photography">
+    <div class="social-icons">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-flickr"></a>
+      <a href="#" class="fa fa-etsy"></a>
+    </div>
+  </div>
+  <div class="links">
+    <div class="services">
+      <p>SHOP</p>
+      <a href="#">Buy Prints</a>
+    </div>
+    <div class="company">
+      <p>INFO</p>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</section>
 </body>
 </html>

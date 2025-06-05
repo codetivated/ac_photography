@@ -1,73 +1,3 @@
-:root {
-  --color-orange: #F96E43;
-  --color-golden: #FDD589;
-  --color-forest: #7A845C;
-  --color-teal: #3D6C64;
-  --color-sage-gray: #DBDED3;
-  --color-mauve-brown: #776164;
-  --color-eggshell: #F8F6EA;
-  --color-white: #fff;
-  --color-black: #333;
-}
-
-/* Apply Cabin Condensed to the whole site */
-body {
-  font-family: 'Cabin Condensed', sans-serif;
-  color: var(--color-black);
-  background-color: var(--color-white);
-  margin: 0;
-  padding: 0;
-}
-
-/* Use Playfair Display SC for titles */
-h1, h2, h3, h4, button {
-  font-family: 'Playfair Display SC', serif;
-}
-
-/* NAVBAR */
-#navbar-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid var(--color-sage-gray);
-  background-color: var(--color-white);
-}
-
-.navbar-left img {
-  height: 50px;
-}
-
-.navbar-right {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.navbar-right a {
-  font-family: 'Playfair Display SC', serif;
-  text-decoration: none;
-  color: var(--color-black);
-  font-size: 1.1rem;
-}
-
-button {
-  /* font-family: 'Cabin Condensed', sans-serif; */
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: var(--color-sage-gray);
-  color: var(--color-black);
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-}
-
-button:hover {
-  background-color: var(--color-mauve-brown);
-  color: var(--color-white);
-}
-
 /* HERO */
 #hero {
   width: 100%;
@@ -80,18 +10,18 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--color-black);
 }
 
 /* ABOUT ME */
-
 #about-me {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6rem 5rem;
+  padding: 8rem 8rem;
   gap: 5rem;
   background-color: var(--color-white);
-  border-bottom: 1px solid var(--color-sage-gray);
+  border-bottom: 1px solid var(--color-black);
 }
 
 .photo-of-anita-cooke img {
@@ -118,8 +48,8 @@ button:hover {
   padding: 0.75rem 1.5rem;
   background-color: var(--color-sage-gray);
   color: var(--color-black);
-  border: none;
-  border-radius: 4px;
+  border: 1px solid;
+  border-radius: 0;
   width: fit-content;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -175,6 +105,7 @@ button:hover {
   display: flex;
   justify-content: center;
   background-color: var(--color-sage-gray);
+
 }
 
 .button-menu-container {
@@ -246,3 +177,4 @@ button:hover {
   background-color: var(--color-mauve-brown);
   color: var(--color-white);
 }
+
