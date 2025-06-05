@@ -158,12 +158,17 @@ button:hover {
   white-space: nowrap;
 }
 
-/* Keyframes to move left */
-@keyframes scroll-left {
-  0%   { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+.scroll-left p {
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0;
 }
 
+/* Keyframes to move left */
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
 /* BUTTON MENU */
 #button-menu {
