@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
 }
 
 /* ABOUT ME */
