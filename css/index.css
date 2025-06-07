@@ -8,12 +8,13 @@
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   border-bottom: 1px solid var(--color-black);
 }
 
-.indicator {
-  padding-top: 150px;
+.hero-title {
+  padding-right: 5rem;
+  align-self: flex-end;
   color: var(--color-eggshell);
   animation: colorFade 4s ease-in-out forwards;
   opacity: 0;
@@ -21,8 +22,10 @@
   padding-bottom: 5rem;
 }
 
-.indicator h1 {
-  font-size: 8rem;
+.hero-title h1 {
+  font-family: "Playwrite US Trad", cursive;
+  text-align: center;
+  font-size: 1rem;
   margin: 0;
   line-height: 0.9;
 }
@@ -35,7 +38,7 @@
 
 @keyframes colorFade {
   0%   { color: var(--color-eggshell); }
-  100% { color: var(--color-forest); }
+  100% { color: var(--color-teal); }
 }
 
 /* ABOUT ME */
@@ -47,6 +50,10 @@
   gap: 5rem;
   background-color: var(--color-white);
   border-bottom: 1px solid var(--color-black);
+}
+
+#about-me p {
+  width: 300px;
 }
 
 .photo-of-anita-cooke img {
@@ -85,12 +92,28 @@
   color: var(--color-white);
 }
 
+.photo-of-anita-cooke {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-of-anita-cooke img {
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid;
+}
+
+
 /* SCROLL VIEW */
 #scrolling-view {
   overflow: hidden;
   white-space: nowrap;
-  background-color: var(--color-black);
-  color: var(--color-eggshell);
+  background-color: var(--color-eggshell);
+  color: var(--color-black);
   padding: 1rem 0;
 }
 
@@ -204,3 +227,94 @@
   color: var(--color-white);
 }
 
+/* ======================= */
+/*        RESPONSIVE       */
+/* ======================= */
+
+@media (max-width: 1024px) {
+  /* Reduce hero font size for tablets */
+  .hero-title h1 {
+    font-size: 3rem;
+    padding-right: 2rem;
+  }
+
+  #about-me {
+    flex-direction: column;
+    padding: 4rem 2rem;
+    gap: 2rem;
+  }
+
+  .photo-of-anita-cooke {
+    height: auto;
+  }
+
+  .about-anita-cooke h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .about-anita-cooke {
+    align-items: center;
+    text-align: center;
+  }
+
+  .button-menu-container button {
+    width: 100%;
+    font-size: 2rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+
+  .hero-title {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .hero-title h1 {
+    font-size: 2.2rem;
+  }
+
+  #about-me {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-anita-cooke h1 {
+    font-size: 2rem;
+  }
+
+  .gallery-preview {
+    gap: 1rem;
+  }
+
+  .gallery-preview img {
+    max-width: 90%;
+  }
+
+  .button-menu-container button {
+    font-size: 1.5rem;
+    height: 3.5rem;
+    width: 8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title h1 {
+    font-size: 1.8rem;
+  }
+
+  #about-me p {
+    width: 100%;
+  }
+
+  .about-anita-cooke {
+    padding: 0;
+  }
+
+  .button-menu-container button {
+    font-size: 1.2rem;
+    height: 3rem;
+  }
+}
