@@ -2,7 +2,6 @@
 #hero {
   width: 100%;
   height: 90vh;
-  max-height: 900px;
   background-image: url(/assets/images/female-cardinal-hero.jpg);
   background-size: cover;
   background-position: center;
@@ -11,6 +10,32 @@
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid var(--color-black);
+}
+
+.indicator {
+  padding-top: 150px;
+  color: var(--color-eggshell);
+  animation: colorFade 4s ease-in-out forwards;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards, colorFade 2s ease-in-out infinite alternate;
+  padding-bottom: 5rem;
+}
+
+.indicator h1 {
+  font-size: 8rem;
+  margin: 0;
+  line-height: 0.9;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes colorFade {
+  0%   { color: var(--color-eggshell); }
+  100% { color: var(--color-forest); }
 }
 
 /* ABOUT ME */
@@ -27,7 +52,7 @@
 .photo-of-anita-cooke img {
   max-width: 400px;
   width: 100%;
-  border: #333;
+  border: var(--color-black);
 }
 
 .about-anita-cooke {
