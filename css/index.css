@@ -163,7 +163,7 @@
   padding: 5rem 1rem;
 }
 
-.button-menu-container button {
+.button-menu-container button, .shop-button {
   border: 1px solid var(--color-black, #000);
   border-radius: 0;
   width: 30rem;
@@ -178,6 +178,27 @@
 }
 
 .button-menu-container button:hover {
+  background-color: var(--color-mauve-brown);
+  color: var(--color-white);
+}
+
+.shop-button {
+  display: inline-block;
+  width: 30rem;
+  height: 6rem;
+  font-size: 3rem;
+  font-family: 'Playfair Display SC', serif;
+  background: transparent;
+  color: var(--color-black);
+  border: 1px solid var(--color-black, #000);
+  border-radius: 0;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 6rem;
+  text-align: center;
+}
+
+.shop-button:hover {
   background-color: var(--color-mauve-brown);
   color: var(--color-white);
 }
