@@ -13,12 +13,6 @@
   color: var(--color-black);
 }
 
-#gallery-hero p {
-  font-family: 'Cabin Condensed', sans-serif;
-  font-size: 1.25rem;
-  color: var(--color-black);
-  margin-top: 1rem;
-}
 
 /* GALLERY GRID */
 #gallery-grid {
@@ -53,10 +47,6 @@
     font-size: 2.5rem;
   }
 
-  #gallery-hero p {
-    font-size: 1rem;
-  }
-
   .gallery-container {
     gap: 1rem;
   }
@@ -71,10 +61,6 @@
     font-size: 3rem;
   }
 
-  #gallery-hero p {
-    font-size: 1.1rem;
-    padding: 0 1rem;
-  }
 
   .gallery-container {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -91,10 +77,6 @@
     font-size: 2.2rem;
   }
 
-  #gallery-hero p {
-    font-size: 1rem;
-  }
-
   .gallery-container {
     gap: 1rem;
   }
@@ -109,9 +91,6 @@
     font-size: 1.8rem;
   }
 
-  #gallery-hero p {
-    font-size: 0.95rem;
-  }
 
   .gallery-container {
     grid-template-columns: 1fr;
