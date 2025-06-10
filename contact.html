@@ -19,7 +19,7 @@
       <img src="/assets/images/anita-cooke-secondary-logo.svg" alt="Anita Cooke submark logo.">
     </div>
     <div class="navbar-right">
-      <a href="#gallery">GALLERY</a>
+      <a href="gallery.html">GALLERY</a>
       <a href="index.html">HOME</a>
       <button>BUY MY PRINTS</button>
     </div>
@@ -31,27 +31,42 @@
       <img src="/assets/images/bird-on-perch-hero.jpg" alt="Bird on perch">
     </div>
     <div class="hero-right">
-      <form action="#">
-        <h1><span>Get In Touch</span></h1>
-        <p>If you’d like to say hello, ask about a photo, or just share a kind word, feel free to reach out.</p>
+<!-- TODO -->
+<form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+  <h1><span>Get In Touch</span></h1>
+  <p>If you’d like to ask about a photo or just share a kind word, feel free to reach out.</p>
 
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="First Name">
+  <label for="fname">First Name</label>
+  <input type="text" name="fname" id="fname" required>
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Last Name">
+  <label for="lname">Last Name</label>
+  <input type="text" name="lname" id="lname" required>
 
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="Email">
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" required>
 
-        <label for="subject">Message</label>
-        <textarea id="subject" name="subject" style="height:200px"></textarea>
+  <label for="message">Message</label>
+  <textarea name="message" id="message" rows="6" required></textarea>
 
-        <input type="submit" value="SUBMIT">
-      </form>
+  <!-- Redirect to thank you page -->
+  <!-- TODO -->
+  <input type="hidden" name="_next" value="https://YOUR_DOMAIN_HERE/thank-you.html">
+
+  <!-- Anti-spam honeypot -->
+  <input type="text" name="_honey" style="display:none">
+
+  <!-- TODO -->
+  <!-- Only allow submissions from your real domain -->
+  <input type="hidden" name="_origin" value="https://YOUR_DOMAIN_HERE">
+
+  <!-- Leave CAPTCHA enabled (recommended) -->
+  <!-- If you *do* want to disable it: -->
+  <!-- <input type="hidden" name="_captcha" value="false"> -->
+
+  <button type="submit">Send</button>
+</form>
     </div>
   </section>
-
 
     <!-- GALLERY   -->
 <section id="gallery">
@@ -65,30 +80,27 @@
     <button onclick="window.location.href='gallery.html'">SEE FULL GALLERY</button>
   </div>
 </section>
-
-
-  <!-- FOOTER -->
-  <section id="footer">
-    <div class="footer-logo-and-social-icons">
-      <img src="/assets/images/anita-cooke-photography-logo.png" alt="Logo of Anita Cooke Photography">
-      <div class="social-icons">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-flickr"></a>
-        <a href="#" class="fa fa-etsy"></a>
-      </div>
+<!-- FOOTER -->
+<section id="footer">
+  <div class="footer-logo-and-social-icons">
+    <img src="/assets/images/anita-cooke-photography-logo.png" alt="Logo of Anita Cooke Photography">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+      <a href="https://www.flickr.com/" class="fa fa-flickr"></a>
+      <a href="https://www.etsy.com" class="fa fa-etsy"></a>
     </div>
-    <div class="links">
-      <div class="services">
-        <p>SHOP</p>
-        <a href="#">Buy Prints</a>
-      </div>
-      <div class="company">
-        <p>INFO</p>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-      </div>
+  </div>
+  <div class="links">
+    <div class="shop">
+      <p>SHOP</p>
+      <a href="https://www.etsy.com">Buy Prints</a>
     </div>
-  </section>
-
+    <div class="info">
+      <p>INFO</p>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</section>
 </body>
 </html>
