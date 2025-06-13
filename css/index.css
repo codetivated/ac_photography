@@ -21,10 +21,18 @@
   padding-bottom: 5rem;
 }
 
-.hero-title h1 {
+.hero-title #anita-cooke-title {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 1.5rem;
+}
+
+#photography-title {
   font-family: "Playwrite US Trad", cursive;
-  text-align: center;
   font-size: 1rem;
+}
+
+.hero-title h1 {
+  text-align: center;
   margin: 0;
   line-height: 0.9;
 }
@@ -163,39 +171,30 @@
   padding: 5rem 1rem;
 }
 
-.button-menu-container button, .shop-button {
+.button-menu-container button,
+.shop-button {
   border: 1px solid var(--color-black, #000);
   border-radius: 0;
-  width: 30rem;
-  height: 6rem;
-  font-size: 3rem;
-  font-family: 'Playfair Display SC', serif;
-  background: transparent;
-  cursor: pointer;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-}
-
-.button-menu-container button:hover {
-  background-color: var(--color-mauve-brown);
-  color: var(--color-white);
-}
-
-.shop-button {
-  display: inline-block;
   width: 30rem;
   height: 6rem;
   font-size: 3rem;
   font-family: 'Playfair Display SC', serif;
   background: transparent;
   color: var(--color-black);
-  border: 1px solid var(--color-black, #000);
-  border-radius: 0;
-  text-decoration: none;
   cursor: pointer;
   line-height: 6rem;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-menu-container button:hover,
+.shop-button:hover {
+  background-color: var(--color-mauve-brown);
+  color: var(--color-white);
 }
 
 .shop-button:hover {
@@ -280,10 +279,10 @@
     font-size: 2.5rem;
   }
 
-  .button-menu-container button {
+  .button-menu-container button,
+  .shop-button {
     width: 12rem;
     font-size: 2rem;
-    height: 4rem;
   }
 }
 
@@ -333,10 +332,12 @@
     max-width: 90%;
   }
 
-  .button-menu-container button {
+  .button-menu-container button,
+  .shop-button {
     font-size: 1.5rem;
     height: 3.5rem;
     width: 10rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -365,8 +366,12 @@
     padding: 0;
   }
 
-  .button-menu-container button {
+  .button-menu-container button,
+  .shop-button {
     font-size: 1.2rem;
     height: 3rem;
+    width: 9rem;
+    line-height: 3rem;
   }
+}
 }
