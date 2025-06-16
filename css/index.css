@@ -171,8 +171,7 @@
   padding: 5rem 1rem;
 }
 
-.button-menu-container button,
-.shop-button {
+.button-menu-container button {
   border: 1px solid var(--color-black, #000);
   border-radius: 0;
   width: 30rem;
@@ -191,16 +190,11 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-.button-menu-container button:hover,
-.shop-button:hover {
+.button-menu-container button:hover {
   background-color: var(--color-mauve-brown);
   color: var(--color-white);
 }
 
-.shop-button:hover {
-  background-color: var(--color-mauve-brown);
-  color: var(--color-white);
-}
 
 /* GALLERY */
 #gallery {
