@@ -217,6 +217,10 @@ button:hover {
     font-size: 1.25rem;
   }
 
+  .navbar-left img {
+    width: 120px;
+  }
+
   .links a {
     font-size: 0.95rem;
   }
